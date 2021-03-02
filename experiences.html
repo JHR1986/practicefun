@@ -42,10 +42,14 @@
     <!--Map Section -->
 
     <div id="map">
+         </div>
 
 
 
-    </div>
+    
+
+
+   
 
 
 
@@ -81,6 +85,22 @@
         </div>
     </footer>
     <!--End of Footer Section-->
+
+        <script>
+        function initMap () {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                   lat: 46.619261,
+                   lng: -33.134766     
+                }
+            });
+        }
+
+    </script>
+   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2MYEN6Wiu0EQWZZLFiEU8vapXw5fcDgo&callback=initMap"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
