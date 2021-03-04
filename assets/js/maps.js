@@ -7,6 +7,7 @@ var map;
             };
             var markersOnMap = [{
                     placeName: "Tokyo",
+                    text: "De facto capital and most populous prefecture of Japan.",
                     LatLng: [{
                         lat: 35.6762,
                         lng: 139.6503
@@ -14,20 +15,23 @@ var map;
                 },
                 {
                     placeName: "Kyoto",
+                    text: "Kyoto is a city on the island of Honshu, famous for its numerous classical Buddhist temples, gardens, imperial palaces, Shinto shrines and traditional wooden houses",
                     LatLng: [{
                         lat: 35.0116,
                         lng: 135.7681
                     }]
                 },
                 {
-                    placeName: "Hiroshima",
+                    placeName: "Osaka",
+                    text: "Osaka is a large port city and commercial center on the Japanese island of Honshu. It's known for its modern architecture, nightlife and hearty street food.",
                     LatLng: [{
-                        lat: 34.3853,
-                        lng: 132.4553
+                        lat: 34.6937,
+                        lng: 135.5023
                     }]
                 },
                 {
                     placeName: "Sapporo",
+                    text: "Sapporo, capital of the mountainous northern Japanese island of Hokkaido, is famous for its beer, skiing and annual Sapporo Snow Festival featuring enormous ice sculptures.",
                     LatLng: [{ 
                         lat: 43.0618,
                         lng: 141.3545
@@ -42,7 +46,7 @@ var map;
             function addMarkerInfo() {
                 for (var i = 0; i < markersOnMap.length; i++) {
                     var contentString = '<div id="content"><h2>' + markersOnMap[i].placeName +
-                        '</h2><p>Lorem ipsum dolor sit amet, vix mutat posse suscipit id, vel ea tantas omittam detraxit.</p></div>';
+                        '</h2><p>' + markersOnMap[i].text + '</p></div>';
 
                     const marker = new google.maps.Marker({
                         position: markersOnMap[i].LatLng[0],
