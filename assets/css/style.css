@@ -166,3 +166,39 @@ footer .row {
 /*End of Membership Section - joinus.html*/
 
 div#map {min-height: 360px;}
+
+/*Start of Enquiry Page - gyminfo.html*/
+.enquiry-heroimage {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.enquiry-image {
+  padding-left: 10px;
+  margin-top: 5px;
+  height: 100px;
+}
+
+.enquiry-heading {
+  padding: 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.enquiry-form {
+  padding: 10px;
+  color: white;
+}
+
+.btn {
+  margin: auto;
+  text-align: center;
+}
+/*End of Enquiry Page - gyminfo.html*/
+.imagetime {
+  height: 500px;
+  background: url("../images/Optimized-streetjapan.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}

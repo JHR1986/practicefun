@@ -12,6 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Miou8ZWKbrE1kDilBpMHJ");
+        })();
+    </script>
 </head>
 
 <body>
@@ -24,13 +31,13 @@
 
         <div class="collapse navbar-collapse text-right" id="navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="experiences.html">Experiences</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="enquiries.html">Enquiries</a>
                 </li>
             </ul>
@@ -38,71 +45,57 @@
     </nav>
     <!--End of Navigation-->
 
-<!--Start of Gym Info Page-->
-    <div class="row">
-      <div class="col-md-12">
-        <h1><i class="fas fa-map-marker-alt"></i> Places to Go & Things to Do in Japan</h1> 
-        <hr>
-      </div>
-      </div>  
-    <!--End of Gym Info Page-->
+    <!--Start of Enquiry Form-->
+    <div class="enquiry-heroimage">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h2 class="enquiry-heading"> Enquiry Form</h2>
+                    <form class="enquiry-form" onsubmit="return sendMail (this);">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputName">Name:</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">Email:</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputQuery">Query for our Team:</label>
+                                <input type="text" class="form-control" id="inputQuery" placeholder="Query" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                    </form>
 
 
 
-    <!--Map Section -->
-
-    <div id="map">
-         </div>
-
-
-<!--Start of Membership Options Section-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <h3>Tokyo</h3>
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
+                </div>
+                <div class="col-md-6 imagetime"></div>
             </div>
-            <div class="col-sm">
-              <h3>Kyoto</h3>
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
-            <div class="col-sm">
-              <h3>Hiroshima</h3>
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
-               <div class="col-sm">
-              <h3>Osaka</h3>
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-              </div>
-            </div>
-          </div>
-        <hr />
-    <!--End of Membership Options Section-->
-   
+
+
+        </div>
+    </div>
+    </div>
 
 
 
-    
+
+
+
+
+
+
     <!--Footer Section-->
     <footer class="footer footer-dark bg-dark">
         <div class="container-fluid">
@@ -133,10 +126,9 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
     <!--End of Footer Section-->
-   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2MYEN6Wiu0EQWZZLFiEU8vapXw5fcDgo&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
