@@ -202,3 +202,33 @@ div#map {min-height: 360px;}
   background-size: cover;
   width: 100%;
 }
+
+/*Start of Facilities Section - facilities.html*/
+.heading-facilities {
+  color: #000000;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
+.facilities {
+  border-style: none;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.facilities img {
+  height: 350px;
+  width: 100%;
+  margin-left: 10px;
+  padding-right: 5%;
+}
+
+.row-3 {
+  color: #000000;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+/*End of Facilities Section - facilities.html*/
